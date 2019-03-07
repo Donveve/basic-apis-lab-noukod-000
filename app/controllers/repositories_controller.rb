@@ -12,7 +12,7 @@ class RepositoriesController < ApplicationController
       req.params["q"] = params[:query]
       req.params["client_id"] = client_id
       req.params["client_secret"] = secret
-    
+
 
     body = JSON.parse(resp.body)
     @repos = body["items"]
